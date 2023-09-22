@@ -1,6 +1,5 @@
 import logo from './database_error.svg';
 import './App.css';
-
 import Button from './components/Button';
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h3>Mensaje de alerta </h3>
         <p>
-        Whirlpool - 24.7 Cu. Ft. French Door Refrigerator in Stainless Steel
+        Desea eliminar la base de datos <strong>ARM-325</strong>, no se podrán recuperar los datos
         </p>
 
         <div className='btns-container'>

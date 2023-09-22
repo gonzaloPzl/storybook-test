@@ -1,0 +1,29 @@
+.button {
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background-color: #F05A28;
+    color: white;
+    border: none;
+    filter: brightness(1);
+    transition: filter 0.4s ease;
+}
+
+.button:hover {
+    filter: brightness(1.2);
+}
+
+.secondary {
+    background-color: transparent;
+    color: #202020;
+    border: 1px solid #C2C2C2;
+}
+
+.danger {
+    background-color: #E24848;
+}

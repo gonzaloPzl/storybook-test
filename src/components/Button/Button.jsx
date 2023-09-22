@@ -1,10 +1,12 @@
 import PropTypes from "prop-types";
+import "./Button.css"
 
+const getClassName = (...args) => ["button", ...args].filter(Boolean).join(" ");
 
-const Button = ({children}) => {
+const Button = ({children, type}) => {
     return (  
 
-        <button>
+        <button className={getClassName(type)}>
             {children}
         </button>
     );
@@ -12,7 +14,8 @@ const Button = ({children}) => {
 
 
 Button.protoTypes = {
-    children: PropTypes.string.isRequired
+    children: PropTypes.string.isRequired,
+    type: PropTypes.oneOf("primary", "secondary", "danger")
 }
  
 export default Button;

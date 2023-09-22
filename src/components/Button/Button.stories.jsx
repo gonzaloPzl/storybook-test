@@ -16,7 +16,12 @@ const Template = (args) => {
 
 export const Primary = Template.bind({})
 export const Secondary = Template.bind({})
+export const Danger = Template.bind({})
 
 Secondary.args = {
     type: 'secondary'
+}
+
+Danger.args = {
+    type: 'danger'
 }
